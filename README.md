@@ -1,6 +1,10 @@
 # IR Cloner
+It a project initiali made by [n3odym3](https://github.com/n3odym3).
+I just added the MQTT credentials fonctions.
 
-<img src="https://github.com/n3odym3/MQTT_IR_Cloner/blob/master/Img/Module.JPG" width="60%">
+# IR Cloner
+
+<img src="https://github.com/antonydbzh/MQTT_IR_Cloner_LOGIN/blob/master/Img/Module.JPG" width="60%">
 
 This module allows to decode and replicate IR remotes while being remotely controllable by MQTT.
 
@@ -10,11 +14,11 @@ At the first boot or if the WiFi is unavailable, the ESP will create an accespoi
 
 Connect to this AP using your smartphone or computer and go to **http://192.168.4.1**
 
-<img src="https://github.com/n3odym3/MQTT_IR_Cloner/blob/master/Img/WiFiSettings.PNG" width="60%"> 
+<img src="https://github.com/antonydbzh/MQTT_IR_Cloner_LOGIN/blob/master/Img/WiFiSettings.PNG" width="60%"> 
 
 The WiFI and MQTT are not mandatory, the device can be used with the AP and ESPUI interface 
 
-<img src="https://github.com/n3odym3/MQTT_IR_Cloner/blob/master/Img/IRControl.PNG" width="60%"> 
+<img src="https://github.com/antonydbzh/MQTT_IR_Cloner_LOGIN/blob/master/Img/IRControl.PNG" width="60%"> 
 
 ## Control
 
@@ -37,7 +41,7 @@ You can send an IR command using :
 - 2x 10x3mm neodymium magnets
 
 ## Wiring
-<img src="https://github.com/n3odym3/MQTT_IR_Cloner/blob/master/Img/Diagram.PNG" width="20%"> 
+<img src="https://github.com/antonydbzh/MQTT_IR_Cloner_LOGIN/blob/master/Img/Diagram.PNG" width="20%"> 
 
 - Emmiter : GND
 - Base : D2 (GPIO 4)
