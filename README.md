@@ -8,7 +8,8 @@ I just added the MQTT credentials fonctions.
 
 This module allows to decode and replicate IR remotes while being remotely controllable by MQTT.
 
-Video in french :
+Tutorial video (in french) :
+
 [![Fabrication d'un copieur de télécommandes infrarouges contrôlable en WiFi](http://img.youtube.com/vi/r25OSnaZPW0/0.jpg)](http://www.youtube.com/watch?v=r25OSnaZPW0 "Fabrication d'un copieur de télécommandes infrarouges contrôlable en WiFi")
 
 
