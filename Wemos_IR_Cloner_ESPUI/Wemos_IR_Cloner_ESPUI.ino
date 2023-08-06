@@ -1,3 +1,9 @@
+/*
+ * programme de neodyme 
+ * https://github.com/n3odym3/MQTT_IR_Cloner
+ * https://www.youtube.com/watch?v=r25OSnaZPW0
+ */
+
 //Web server=======================
 #ifdef ESP8266
 #include <ESP8266WiFi.h>
@@ -28,10 +34,10 @@ unsigned long last_millis = 0;
 
 //ESPUI=================================================================================================================
 #include <ESPUI.h>
-uint16_t wifi_ssid_text, wifi_pass_text, mqtt_server_text, mqtt_topic_in_text, mqtt_topic_out_text, mqtt_enabled_switch;
+uint16_t wifi_ssid_text, wifi_pass_text, mqtt_server_text, mqtt_topic_in_text, mqtt_topic_out_text, mqtt_user_text, mqtt_pass_text, mqtt_enabled_switch;
 uint16_t statusLabelId, serialLabelId, ir_cmd;
 String option;
-String stored_ssid, stored_pass, stored_mqtt_server, stored_mqtt_topic_in, stored_mqtt_topic_out;
+String stored_ssid, stored_pass, stored_mqtt_server, stored_mqtt_user, stored_mqtt_pass, stored_mqtt_topic_in, stored_mqtt_topic_out;
 bool mqtt_enabled = false;
 //ESPUI=================================================================================================================
 
