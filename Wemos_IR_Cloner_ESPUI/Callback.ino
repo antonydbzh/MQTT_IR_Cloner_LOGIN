@@ -40,11 +40,15 @@ void SaveWifiDetailsCallback(Control *sender, int type) {
     stored_mqtt_topic_in = ESPUI.getControl(mqtt_topic_in_text)->value;
     stored_mqtt_topic_out = ESPUI.getControl(mqtt_topic_out_text)->value;
     stored_mqtt_server = String(ESPUI.getControl(mqtt_server_text)->value);
+    stored_mqtt_user = String(ESPUI.getControl(mqtt_user_text)->value); // User
+    stored_mqtt_pass = String(ESPUI.getControl(mqtt_pass_text)->value); // MDP
     mqtt_enabled = ESPUI.getControl(mqtt_enabled_switch)->value.toInt() ? true : false;
 
     preferences.putString("stored_ssid", stored_ssid);
     preferences.putString("stored_pass", stored_pass);
     preferences.putString("stored_mqtt_server", stored_mqtt_server);
+    preferences.putString("mqtt_user", stored_mqtt_user); // USER
+    preferences.putString("mqtt_pass", stored_mqtt_pass); // MDP
     preferences.putString("stored_mqtt_topic_in", stored_mqtt_topic_in);
     preferences.putString("stored_mqtt_topic_out", stored_mqtt_topic_out);
     preferences.putBool("mqtt_enabled", mqtt_enabled);
@@ -52,6 +56,8 @@ void SaveWifiDetailsCallback(Control *sender, int type) {
     Serial.println(stored_ssid);
     Serial.println(stored_pass);
     Serial.println(stored_mqtt_server);
+    Serial.println(stored_mqtt_user); // user
+    Serial.println(stored_mqtt_pass); // mdp
     Serial.println(stored_mqtt_topic_in);
     Serial.println(stored_mqtt_topic_out);
     Serial.println(mqtt_enabled);
